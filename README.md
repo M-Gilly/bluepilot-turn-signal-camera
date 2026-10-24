@@ -1,14 +1,18 @@
 # BluePilot Turn Signal Camera
 
+> **DEVELOPMENT AND TESTING ONLY — NOT READY FOR DEPLOYMENT.**
+>
+> This experimental code works only while the vehicle is stationary: stopped in Drive, foot brake held, accelerator released and driving assistance inactive. It does not support camera activation while driving. Use it only for controlled stationary testing and development; it is not ready for production deployment, routine vehicle use or road use.
+
 An experimental BluePilot integration that uses the F-150 Lightning's existing factory side cameras to display the corresponding mirror view when a physical turn signal is selected.
 
-**This published beta operates only while stopped in Drive, with the foot brake held, the accelerator released and driving assistance inactive.** The feature is controlled by **Settings → BluePilot → Vehicle → Turn Signal Blind Spot View** and defaults to OFF on a new community installation.
+**Stationary-only operation is enforced in the published code.** The feature is controlled by **Settings → BluePilot → Vehicle → Turn Signal Blind Spot View** and defaults to OFF on a new community installation.
 
 ## Purpose
 
 The project documents a reproducible way to activate the factory side-camera feature and gives other owners and developers a small, inspectable implementation for stationary testing. The repository includes the Python controller integration, Panda camera-message checks, settings toggle, installer, verification tools and test fixtures.
 
-The goal of this release is to gather compatibility reports, document the factory message sequence and improve installation/recovery behavior. It is an early community experiment, not a production-ready feature or a Ford-endorsed implementation.
+The purpose of publishing this source is to support inspection, controlled stationary testing and development. The project aims to gather compatibility reports, document the factory message sequence and improve installation/recovery behavior. It is not ready for deployment and is not a Ford-endorsed implementation.
 
 ## What happens when you signal
 
@@ -36,7 +40,9 @@ This is **partial trailer-state emulation**, not simply a screen overlay. Receiv
 
 Other vehicle fingerprints, software versions and device/harness combinations are not established by this release. The installer rejects incompatible baselines. It is not a complete BluePilot distribution and cannot add missing camera hardware or factory configuration.
 
-## Installation
+## Development setup
+
+**The setup instructions are provided only for controlled stationary testing and development. Their presence does not mean the project is ready to deploy.**
 
 Read **[the full installation and restore guide](docs/INSTALL.md)** before running an installer. It covers prerequisites, compatibility checks, the separate firmware build, deployment, reboot, running-firmware verification, stationary testing and rollback.
 
@@ -59,6 +65,8 @@ On the development Lightning, both actual mirror feeds appeared during stationar
 These are observations from those tests. They do not establish actual radar target-detection performance, every receiving module's behavior or compatibility with another truck. Moving operation with a genuine physical trailer was recorded separately; it is not validation of moving emulation, and this beta retains its stationary restrictions.
 
 The source release has passed **41 targeted host tests**: 21 native-hook tests, 9 runtime/settings/UI tests and 11 installer transaction tests. The community stock installer has not yet completed an end-to-end installation on a second physical stock device. Earlier broad diagnostics also contained stock test failures; this project does not claim a fully passing Ford safety suite.
+
+Passing these host tests and the reported stationary experiments does not establish deployment readiness. **The project remains development/testing-only and is not ready for deployment.**
 
 See [docs/VALIDATION.md](docs/VALIDATION.md) for the evidence, test scope and remaining gaps.
 
