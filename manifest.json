@@ -1,0 +1,38 @@
+{
+  "opendbc_repo/opendbc/car/ford/carcontroller.py": {
+    "stock": "2c37980950f8c9e89ed8d1697d65767b4ffb4efcbb226ea6e3b28c6474de2456",
+    "installed": "a5d8142366f93dda629549713226bb9f72f99a1e0767d1fa38353795b63781d0"
+  },
+  "opendbc_repo/opendbc/safety/modes/ford.h": {
+    "stock": "b9c07cf9911234399ff802d73897aa7b7a9af645e502969f6c10aef49724f7d6",
+    "installed": "fe2b8f4141928f451dea4ede5155008e6a8cd93372a705502de09c4c934e3ec7"
+  },
+  "opendbc_repo/opendbc/car/ford/sidecamera_engine.py": {
+    "stock": null,
+    "installed": "a535efe590bcce5aba8e775a2a7e8b7f50376cd8e8422be39a5301001c0439fb"
+  },
+  "opendbc_repo/opendbc/car/ford/sidecamera_runtime.py": {
+    "stock": null,
+    "installed": "58a14fe818851c4b1523ba2e4b604ada5f6caba9f3f9919a857ed6508e508944"
+  },
+  "opendbc_repo/opendbc/safety/modes/ford_sidecamera.h": {
+    "stock": null,
+    "installed": "473242b43dabb443a087abce15186abc01f2643666aae002d3024dd64a3e8302"
+  },
+  "opendbc_repo/opendbc/car/ford/sidecamera_settings.py": {
+    "stock": null,
+    "installed": "bd9a60612fcb6954df348b77a55af93f3f5655f5ab27d2a19b44400ecd2afa55"
+  },
+  "selfdrive/ui/bp/mici/layouts/settings/vehicle_mici.py": {
+    "stock": "46b3df34e9d02eb97ce82c68c1efcaac7d09611cddd19411f63cdb55704ad45f",
+    "installed": "0748d71103402b9c49dd981bbd5c6daf2e8a118e610db386b38d8286006be81c"
+  },
+  "launch_chffrplus.sh": {
+    "stock": "107b3591d0d7dd98e4d2318c9829880f2c7094d01636ac3bdb8d68ba2ac5f687",
+    "installed": "cd9ffe2d74749b6ac1aec37c02e8325222bb4ae90f9cdb5a91e64e88a2889e1c"
+  },
+  "sunnypilot/system/hardware/c3/launch_chffrplus.sh": {
+    "stock": "441bc5c29777b3f80c70425ee5f07a71ec990d143f89ee8817dfcfd455a78317",
+    "installed": "135342ab076d8389a0f6e4277b953b3a66c008b5a4cbe2d82773a15f141a2f75"
+  }
+}
